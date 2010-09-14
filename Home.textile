@@ -7,3 +7,5 @@ OfflineIMAP is a Free Software project licensed under the GNU General Public Lic
 For more information on OfflineIMAP's featureset, see the OfflineIMAP manual (link below).
 
 h1. Starting Points
+
+* The OfflineIMAP Manual
