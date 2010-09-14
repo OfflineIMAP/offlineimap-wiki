@@ -14,8 +14,8 @@ h1. Starting Points
 ** Description of how OfflineIMAP works
 * [[Screen Shots]] of OfflineIMAP in action
 * [[Frequently Asked Questions]] (FAQ)
-* "Annotated offlineimap.conf file":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf with full documentation on the file and examples
-* "Minimal offlineimap.conf":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf.minimal which shows how simple it is to get started
+* "Annotated offlineimap.conf file":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf, with full documentation on the file and examples
+* "Minimal offlineimap.conf":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf.minimal, which shows how simple it is to get started
 
 h1. Downloads: Source and Binaries
 
@@ -32,4 +32,4 @@ h1. Mailing List and Community
 
 Please ask here with your questions.
 
-The OfflineIMAP mailing list is available at http://lists.alioth.debian.org/mailman/listinfo/offlineimap-project.  Long-term archives are "available from GMane":http://dir.gmane.org/gmane.mail.imap.offlineimap.general
+The OfflineIMAP "mailing list is available":http://lists.alioth.debian.org/mailman/listinfo/offlineimap-project for you.  Long-term archives are "available from GMane":http://dir.gmane.org/gmane.mail.imap.offlineimap.general.
