@@ -1,0 +1,7 @@
+Here are answers to some of the most frequently asked questions about OfflineIMAP
+
+h1. Basic Questions
+
+h2. Where do I get OfflineIMAP?
+
+See the information on the [[Home]] page.
