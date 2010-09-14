@@ -1,0 +1,3 @@
+Not a whole let here yet, I'm afraid, but see these:
+
+* "offlineimap-1.png":http://jgoerzen.github.com/offlineimap/offlineimap-1.png
