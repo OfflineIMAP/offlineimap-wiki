@@ -6,6 +6,9 @@ OfflineIMAP is a Free Software project licensed under the GNU General Public Lic
 
 For more information on OfflineIMAP's featureset, see the OfflineIMAP manual (link below).
 
+This software was written by "John Goerzen":http://www.complete.org/jgoerzen.  If you like it, you can send a few dollars my way via "my tip jar":http://www.complete.org/TipJar, though that is certainly optional and doesn't buy you anything.
+
+
 h1. Starting Points
 
 * The OfflineIMAP Manual ("HTML":http://jgoerzen.github.com/offlineimap/manual.html or "PDF":http://jgoerzen.github.com/offlineimap/manual.pdf).  Includes:
