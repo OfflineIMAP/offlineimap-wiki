@@ -8,4 +8,4 @@ For more information on OfflineIMAP's featureset, see the OfflineIMAP manual (li
 
 h1. Starting Points
 
-* The OfflineIMAP Manual
+* The OfflineIMAP Manual ("HTML":http://jgoerzen.github.com/offlineimap/manual.html or "PDF":http://jgoerzen.github.com/offlineimap/manual.pdf)
