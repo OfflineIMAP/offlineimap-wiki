@@ -16,6 +16,7 @@ h1. Starting Points
 * [[Frequently Asked Questions]] (FAQ)
 * "Annotated offlineimap.conf file":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf, with full documentation on the file and examples
 * "Minimal offlineimap.conf":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf.minimal, which shows how simple it is to get started
+* "Github project page":http://github.com/jgoerzen/offlineimap
 
 h1. Downloads: Source and Binaries
 
