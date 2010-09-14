@@ -127,13 +127,14 @@ h4. How do I set up mbnames with mutt?
 
 The example offlineimap.conf file has this example. In your offlineimap.conf, you'll list this:
 
-<code>[mbnames]
+<pre>[mbnames]
 enabled = yes
 filename = ~/Mutt/muttrc.mailboxes
 header = "mailboxes " 
 peritem = "+%(accountname)s/%(foldername)s" 
 sep = " " 
-footer = "\n"</code>
+footer = "\n"
+</pre>
 
 Then in your .muttrc:
 
@@ -141,8 +142,9 @@ Then in your .muttrc:
 
 You might also want to set:
 
-<code>set mbox_type=Maildir
-set folder=$HOME/Maildirpath</code>
+<pre>set mbox_type=Maildir
+set folder=$HOME/Maildirpath
+</pre>
 
 The OfflineIMAP manual has a more detailed example for doing this for multiple accounts.
 
@@ -158,7 +160,7 @@ h2. What can I do to ensure OfflineIMAP is still running and hasn't crashed?
 
 This shell script will restart OfflineIMAP if it has crashed. Sorry, its written in Korn, so you'll need ksh, pdksh, or mksh to run it.
 
-<code>
+<pre>
 #!/bin/ksh
 # remove any old instances of this shell script or offlineimap
 for pid in $(pgrep offlineimap)
@@ -177,4 +179,4 @@ do
    ( exec /usr/bin/offlineimap -u Noninteractive.Quiet )
    sleep 60 # prevents extended failure conditions (network down) from spamming
 done
-</code>
+</pre>
