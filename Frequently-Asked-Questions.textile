@@ -42,3 +42,83 @@ Next, you'll need to mount your Maildir directory in a special way. There is inf
 <code>mount -f -s -b -o managed "d:/tmp/mail" "/home/of/mail"</code>
 
 That URL also has more details on making OfflineIMAP work with Windows.
+
+h2. Does OfflineIMAP support mbox, mh, or anything else other than Maildir?
+
+Not directly. Maildir was the easiest to implement. I'm not planning to write mbox code for OfflineIMAP, though if someone sent me well-written mbox support and pledged to support it, I'd commit it to the tree.
+
+However, OfflineIMAP can directly sync accounts on two different IMAP servers together. So you could install an IMAP server on your local machine that supports mbox, sync to it, and then instruct your mail readers to use the mboxes.
+
+Or you could install whatever IMAP server you like on the local machine, and point your mail readers to that IMAP server on localhost.
+
+h2. How do I add or delete a folder?
+
+OfflineIMAP does not currently provide this feature. However, if you create a new folder on the remote server, OfflineIMAP will detect this and create the corresponding folder locally automatically.
+
+h2. Does OfflineIMAP support POP?
+
+No. POP is not robust enough to do a completely reliable multi-machine sync like OfflineIMAP can do.
+
+OfflineIMAP will never support POP.
+
+h1. Configuration Questions
+
+h2. Can I synchronize multiple accounts with OfflineIMAP?
+
+Of course!
+
+Just name them all in the accounts line in the general section of the configuration file, and add a per-account section for each one.
+
+You can also optionally use the -a option when you run OfflineIMAP to request that it only operate upon a subset of the accounts for a particular run.
+
+h2. How do I specify the names of folders?
+
+You do not need to. OfflineIMAP is smart enough to automatically figure out what folders are present on the IMAP server and synchronize them. You can use the folderfilter and nametrans configuration file options to request only certain folders and rename them as they come in if you like.
+
+h2. How do I prevent certain folders from being synced?
+
+Use the folderfilter option.
+
+h2. What is the mailbox name recorder (mbnames) for?
+
+Some mail readers, such as mutt, are not capable of automatically determining the names of your mailboxes. OfflineIMAP can help these programs by writing the names of the folders in a format you specify. See the example offlineimap.conf for details.
+
+h1. IMAP Server Notes
+
+In general, OfflineIMAP works with any IMAP server that provides compatibility with the IMAP RFCs. Some servers provide imperfect compatibility that may be good enough for general clients. OfflineIMAP needs more features, specifically support for UIDs, in order to do its job accurately and completely.
+
+h2. Microsoft Exchange
+
+Several users have reported problems with Microsoft Exchange servers in conjunction with OfflineIMAP. This generally seems to be related to the Exchange servers not properly following the IMAP standards.
+
+Mark Biggers has posted some "information":http://lists.complete.org/offlineimap@complete.org/2005/09/msg00011.html.gz to the OfflineIMAP mailing list about how he made it work.
+
+Other users have indicated that older (5.5) releases of Exchange are so bad that they will likely not work at all.
+
+I do not have access to Exchange servers for testing, so any problems with it, if they can even be solved at all, will require help from OfflineIMAP users to find and fix.
+
+h1. Client Notes
+
+h2. What clients does OfflineIMAP work with?
+
+Any client that supports Maildir. Popular ones include mutt, Evolution and KMail. Thunderbird does not have maildir suppport.
+
+With OfflineIMAP's IMAP-to-IMAP syncing, this can be even wider; see the next question.
+
+h3. Evolution
+
+OfflineIMAP can work with Evolution. To do so, first configure your OfflineIMAP account to have sep = / in its configuration. Then, configure Evolution with the "Maildir-format mail directories" server type. For the path, you will need to specify the name of the top-level folder *inside* your OfflineIMAP storage location. You're now set!
+
+h3. KMail
+
+At this time, I believe that OfflineIMAP with Maildirs is not compatible with KMail. KMail cannot work in any mode other than to move all messages out of all folders immediately, which (besides being annoying and fundamentally broken) is incompatible with OfflineIMAP.
+
+However, I have made KMail version 3 work well with OfflineIMAP by installing an IMAP server on my local machine, having OfflineIMAP sync to that, and pointing KMail at the same server.
+
+Another way to see mails downloaded with offlineimap in KMail (KDE4) is to create a local folder (e.g. Backup) and then use "ln -s localfolders_in_offlineimaprc ~/.kde/share/apps/kmail/mail/.Backup.directory". Maybe you have to rebuild the index of the new folder. Works well with KMail 1.11.4 (KDE4.x), offlineimap 6.1.2 and ArchLinux and sep = / in .offlineimaprc.
+
+h3. Mutt
+
+h4. Do I need to use set maildir_trash?
+
+Other IMAP sync programs require you to do this. OfflineIMAP does not. You'll get the best results without it, in fact, though turning it on won't hurt anything.
