@@ -8,4 +8,11 @@ For more information on OfflineIMAP's featureset, see the OfflineIMAP manual (li
 
 h1. Starting Points
 
-* The OfflineIMAP Manual ("HTML":http://jgoerzen.github.com/offlineimap/manual.html or "PDF":http://jgoerzen.github.com/offlineimap/manual.pdf)
+* The OfflineIMAP Manual ("HTML":http://jgoerzen.github.com/offlineimap/manual.html or "PDF":http://jgoerzen.github.com/offlineimap/manual.pdf).  Includes:
+** Feature list
+** Installation instructions
+** Description of how OfflineIMAP works
+* [[Screen Shots]] of OfflineIMAP in action
+* [[Frequently Asked Questions]] (FAQ)
+* "Annotated offlineimap.conf file":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf with full documentation on the file and examples
+* "Minimal offlineimap.conf":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf.minimal which shows how simple it is to get started
