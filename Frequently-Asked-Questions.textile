@@ -5,3 +5,40 @@ h1. Basic Questions
 h2. Where do I get OfflineIMAP?
 
 See the information on the [[Home]] page.
+
+h2. How fast is it?
+
+OfflineIMAP has a multithreaded sync, so it should have very nice performance.
+
+OfflineIMAP versions 2.0 and above contain a multithreaded system. A good way to experiment is by setting maxsyncaccounts to 3 and maxconnections to 3 in each account clause.
+
+This lets OfflineIMAP open up multiple connections simultaneously. That will let it process multiple folders and messages at once. In most cases, this will increase performance of the sync.
+
+Don't set the number too high. If you do that, things might actually slow down as your link gets saturated. Also, too many connections can cause mail servers to have excessive load. Administrators might take unkindly to this, and the server might bog down. There are many variables in the optimal setting; experimentation may help.
+
+An informal benchmark yields these results for my setup:
+
+* 10 minutes with MacOS X Mail.app "manual cache"
+* 5 minutes with GNUS agent sync
+* 20 seconds with OfflineIMAP 1.x
+* 9 seconds with OfflineIMAP 2.x
+* 3 seconds with OfflineIMAP 3.x "cold start"
+* 2 seconds with OfflineIMAP 3.x "held connection"
+
+h2. What platforms does OfflineIMAP support?
+
+It should run on most platforms supported by Python, which are quite a few. I do not support Windows myself, but some have made it work there.
+
+h3. Use on Windows
+
+These answers have been reported by OfflineIMAP users. I do not run OfflineIMAP on Windows myself, so I can't directly address their accuracy.
+
+The basic answer is that it's possible and doesn't require hacking OfflineIMAP source code. However, it's not necessarily trivial. The information below is based in instructions submitted by Chris Walker.
+
+First, you must run OfflineIMAP in the "Cygwin":http://www.cygwin.com/ environment. The Windows filesystem is not powerful enough to accomodate Maildir by itself.
+
+Next, you'll need to mount your Maildir directory in a special way. There is information for doing that at "http://barnson.org/node/295":http://barnson.org/node/295.  That site gives this example:
+
+<code>mount -f -s -b -o managed "d:/tmp/mail" "/home/of/mail"</code>
+
+That URL also has more details on making OfflineIMAP work with Windows.
