@@ -16,3 +16,10 @@ h1. Starting Points
 * [[Frequently Asked Questions]] (FAQ)
 * "Annotated offlineimap.conf file":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf with full documentation on the file and examples
 * "Minimal offlineimap.conf":http://github.com/jgoerzen/offlineimap/blob/master/offlineimap.conf.minimal which shows how simple it is to get started
+
+h1. Downloads: Source and Binaries
+
+* You can download the latest development tree by simply clicking Download Source above.
+* You can download a stable release for all operating systems by clicking the "Downloads tab":http://github.com/jgoerzen/offlineimap/downloads, then select the most recent debian/ release.
+* You can find Debian packages from the "OfflineIMAP Debian Page":http://packages.debian.org/offlineimap
+* RPMs and packages for many other Linux and BSD distributions are also included with your distribution.
