@@ -122,3 +122,59 @@ h3. Mutt
 h4. Do I need to use set maildir_trash?
 
 Other IMAP sync programs require you to do this. OfflineIMAP does not. You'll get the best results without it, in fact, though turning it on won't hurt anything.
+
+h4. How do I set up mbnames with mutt?
+
+The example offlineimap.conf file has this example. In your offlineimap.conf, you'll list this:
+
+<code>[mbnames]
+enabled = yes
+filename = ~/Mutt/muttrc.mailboxes
+header = "mailboxes " 
+peritem = "+%(accountname)s/%(foldername)s" 
+sep = " " 
+footer = "\n"</code>
+
+Then in your .muttrc:
+
+<code>source ~/Mutt/muttrc.mailboxes</code>
+
+You might also want to set:
+
+<code>set mbox_type=Maildir
+set folder=$HOME/Maildirpath</code>
+
+The OfflineIMAP manual has a more detailed example for doing this for multiple accounts.
+
+h1. Miscellaneous Questions
+
+h2. Why are your Maildir message filenames so long?
+
+OfflineIMAP has two relevant principles: 1) never modifying your messages in any way and 2) ensuring 100% reliable synchronizations. In order to do a reliable sync, OfflineIMAP must have a way to uniquely identify each e-mail. Three pieces of information are required to do this: your account name, the folder name, and the message UID. The account name can be calculated from the path in which your messages are. The folder name can usually be as well, BUT some mail clients move messages between folders by simply moving the file, leaving the name intact.
+
+So, OfflineIMAP must store both a UID folder ID. The folder ID is necessary so OfflineIMAP can detect a message moved to a different folder. OfflineIMAP stores the UID (U= number) and an md5sum of the foldername (FMD5= number) to facilitate this.
+
+h2. What can I do to ensure OfflineIMAP is still running and hasn't crashed?
+
+This shell script will restart OfflineIMAP if it has crashed. Sorry, its written in Korn, so you'll need ksh, pdksh, or mksh to run it.
+
+<code>
+#!/bin/ksh
+# remove any old instances of this shell script or offlineimap
+for pid in $(pgrep offlineimap)
+do
+   if  $pid -ne $$ 
+   then
+      kill $pid
+   fi
+done
+
+# wait for compiz (or whatever) to start and setup wifi
+sleep 20
+# If offlineimap exits, restart it
+while true
+do
+   ( exec /usr/bin/offlineimap -u Noninteractive.Quiet )
+   sleep 60 # prevents extended failure conditions (network down) from spamming
+done
+</code>
