@@ -28,6 +28,10 @@ h1. Contributing to OfflineIMAP
 
 You can always take the easy route: download the source and email diffs.  But it's better if you use Git.  Github has a lot of information on "their help site":http://help.github.com/ about doing that.
 
+h1. Development & Support Status
+
+John Goerzen initially wrote OfflineIMAP, but due to time constraints, is no longer able to do much work on it.  Support is provided by the community on the mailing list.  Most patches, changes, bugfixes, etc. are written by others and periodically merged into the main development branch by John.
+
 h1. Mailing List and Community
 
 Please ask here with your questions.
