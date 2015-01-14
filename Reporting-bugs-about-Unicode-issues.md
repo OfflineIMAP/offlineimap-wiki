@@ -8,8 +8,8 @@
 
 Report new issues at [Github](https://github.com/OfflineIMAP/offlineimap/issues/new).
 Set the following attributes to the issues:
-* label *unicode* (right panel)
-* assign to nicolas33
+* label **unicode** (right panel)
+* assign to **nicolas33**
 
 The title does not have to expressly tell it is about unicode.
 
