@@ -17,4 +17,6 @@ The title does not have to expressly tell it is about unicode.
 
 * Your configuration (the type of the repositories, the UI).
 
-TODO
+TODO:
+* positive feedbacks sample
+* bug report sample
