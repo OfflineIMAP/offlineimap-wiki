@@ -1,6 +1,6 @@
 # Introduction
 
-* Before reporting a bug, check it is not already reported [here](https://github.com/OfflineIMAP/offlineimap/labels/unicode).
+* Before reporting a bug, check it's not already reported [here](https://github.com/OfflineIMAP/offlineimap/labels/unicode).
 * The status of the WIP *(work in progress)* can be found [here](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-status).
 
 
@@ -8,12 +8,12 @@
 
 Report new issues at
 [Github](https://github.com/OfflineIMAP/offlineimap/issues/new) **or** to the
-mailing list *(but not both, unlees you're asked to).*
+mailing list *(but not both, unless you're asked to).*
 
 Set the following attributes to the issues:
-* **label** to **unicode** (right panel)
+* **label** to **unicode** *(right panel)*
 * **assign** to **nicolas33**
-* the **title** does not have to expressly tell it is about unicode
+* the **title** does not have to expressly tell it's about unicode
 
 
 # Samples
@@ -24,6 +24,5 @@ Set the following attributes to the issues:
 
 # Development
 
-TODO
-
+This section will be updated on requests.
 Please ask in the mailing list if you have questions!
