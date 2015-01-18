@@ -19,9 +19,11 @@ Set the following attributes to the issues:
 # Samples
 
 * [Bug report sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-bug-report-sample).
-* [Positive feedback sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-positive-feedback-report).
+* [Positive feedback sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-positive-feedback-sample).
 
 
 # Development
 
 TODO
+
+Please ask in the mailing list if you have questions!
