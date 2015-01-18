@@ -15,7 +15,7 @@ Set the following attributes to the issues:
 * the **title** does not have to expressly tell it is about unicode
 
 
-[Bug report sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-bug-report-sample.md).
+[Bug report sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-bug-report-sample).
 
 
 # Positive feedbacks
