@@ -5,7 +5,7 @@ Last update (2015-01-18)
 
 # Status of Unicode
 
-* **CLI options**: implemented, not tested
+* **CLI options**: implemented, few tests
 
 * **UI basic**: implemented, few tests
 * **UI machineui**: implemented, not tested
