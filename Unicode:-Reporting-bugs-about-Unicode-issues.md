@@ -21,6 +21,9 @@ Set the following attributes to the issues:
 * [Bug report sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-bug-report-sample).
 * [Positive feedback sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-positive-feedback-sample).
 
+[Clone the wiki to get the samples as local files.](https://github.com/OfflineIMAP/offlineimap.wiki.git)
+You'll got with faster edits to turn the samples into real *ready-to-paste* issues.
+
 
 # Development
 
