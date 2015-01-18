@@ -1,7 +1,7 @@
 # Introduction
 
 * Before reporting a bug, check it is not already reported [here](https://github.com/OfflineIMAP/offlineimap/labels/unicode).
-* The status of the WIP *(work in progress)* can be found [here](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-support-status).
+* The status of the WIP *(work in progress)* can be found [here](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-status).
 
 
 # Reporting new issue
