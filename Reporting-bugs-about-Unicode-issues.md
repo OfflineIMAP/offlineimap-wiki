@@ -7,22 +7,16 @@
 
 Report new issues at
 [Github](https://github.com/OfflineIMAP/offlineimap/issues/new) **or** to the
-mailing list (but not both unlees you're asked to).
+mailing list *(but not both, unlees you're asked to).*
 
 Set the following attributes to the issues:
-* label **unicode** (right panel)
-* assign to **nicolas33**
+* **label** to **unicode** (right panel)
+* **assign** to **nicolas33**
+* the **title** does not have to expressly tell it is about unicode
 
-The title does not have to expressly tell it is about unicode.
 
-## Asked comments
+[Bug report sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-bug-report-sample.md).
 
-* Your configuration (the type of the repositories, the UI).
-* TODO
-
-## Bug report sample
-
-TODO
 
 # Positive feedbacks
 
