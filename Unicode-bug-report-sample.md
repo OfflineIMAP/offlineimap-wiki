@@ -1,11 +1,17 @@
 You might want to copy/paste the following content to your bug report.
 Remove unused options. ,-)
 
+Please, keep the syntax for better Github formatting.
+
 ***
 
 	### Issue
 
-	Python exception traces, warnings, comments, etc...
+	* **Python exception** traces, warnings, comments, etc...
+	* Output of **`offlineimap --info`** (can be sent by mail to me directly with
+		github issue reference/number for confidentiality).
+	* **OfflineIMAP version**
+	* **git:** (how are you comfortable with git for furthen testing?)
 
 	### Used configuration options
 

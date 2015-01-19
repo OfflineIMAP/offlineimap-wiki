@@ -2,15 +2,21 @@ You might want to copy/paste the following content to your bug report.
 Remove unused options. ,-)
 
 Create a new issue for each positive feedback. Notice that the report is usefull
-only if you have non-ASCII characters somewhere (remove the lines not having
-Unicode characters in the **Tests on Unicode** section).
+only if you have non-ASCII characters somewhere for the tested option.  Select
+the lines according to your tests. Remove each not having Unicode characters in
+the **Tests on Unicode** section).
+
+Please, keep the syntax for better Github formatting.
 
 ***
 
 	### Positive feedback
 
-	Tests passed with the following options.
-	Test frequency (or approximate number of syncs):
+	* **Test frequency**: (or approximate number of syncs)
+	* **OfflineIMAP version**
+	* Output of **`offlineimap --info`** (can be sent by mail to me directly with
+		github issue reference/number for confidentiality).
+
 
 	### Tests on Unicode
 
