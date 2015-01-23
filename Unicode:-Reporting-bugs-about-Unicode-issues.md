@@ -18,6 +18,8 @@ Set the following attributes to the issues:
 
 # Samples
 
+The quick copy/paste samples to not start your repot from scratch.
+
 * [Bug report sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-bug-report-sample).
 * [Positive feedback sample](https://github.com/OfflineIMAP/offlineimap/wiki/Unicode-positive-feedback-sample).
 

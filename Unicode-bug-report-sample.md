@@ -12,6 +12,7 @@ Please, keep the syntax for better Github formatting.
 		github issue reference/number for confidentiality).
 	* **OfflineIMAP version**
 	* **git:** (how are you comfortable with git for furthen testing?)
+	* **Python** (how comfortable you are with Python and if you're willing the get your hands dirty)
 
 	### Used configuration options
 
