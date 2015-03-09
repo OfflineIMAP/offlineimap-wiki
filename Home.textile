@@ -1,49 +1,43 @@
-OfflineIMAP is a tool to simplify your e-mail reading. With OfflineIMAP, you can read the same mailbox from multiple computers. You get a current copy of your messages on each computer, and changes you make one place will be visible on all other systems. For instance, you can delete a message on your home computer, and it will appear deleted on your work computer as well. OfflineIMAP is also useful if you want to use a mail reader that does not have IMAP support, has poor IMAP support, or does not provide disconnected operation.
 
-OfflineIMAP works on pretty much any POSIX operating system, such as Linux, BSD operating systems, MacOS X, Solaris, etc.
-
-OfflineIMAP is a Free Software project licensed under the GNU General Public License. You can download it for free, and you can modify it. In fact, you are encouraged to contribute to OfflineIMAP, and doing so is fast and easy.
-
-For more information on OfflineIMAP's featureset, see the OfflineIMAP manual (link below).
-
-This software was written by "John Goerzen":http://www.complete.org/jgoerzen, who recently retired from maintaining.  If you like it, you can send a few dollars my way via "my tip jar":http://www.complete.org/TipJar, though that is certainly optional and doesn't buy you anything.
+"Github OfflineIMAP page":http://github.com/OfflineIMAP/offlineimap
 
 
-h1. Starting Points
-
-* The OfflineIMAP Manual ("HTML":http://jgoerzen.github.com/offlineimap/manual.html or "PDF":http://jgoerzen.github.com/offlineimap/manual.pdf).  Includes:
-** Feature list
-** Installation instructions
-** Description of how OfflineIMAP works
-* [[Screen Shots]] of OfflineIMAP in action
-* [[Frequently Asked Questions]] (FAQ)
-* "Annotated offlineimap.conf file":http://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf, with full documentation on the file and examples
-* "Minimal offlineimap.conf":http://github.com/OfflineIMAP/OfflineIMAP/blob/master/offlineimap.conf.minimal, which shows how simple it is to get started
-* "Github project page":http://github.com/OfflineIMAP/offlineimap
 
 h1. Downloads: Source and Binaries
 
-* You can download the latest development tree by simply clicking "Download Source":http://github.com/OfflineIMAP/offlineimap/archives/master above.
-* You can download a stable release for all operating systems by clicking the "Downloads tab":http://github.com/OfflineIMAP/offlineimap/downloads, then select the most recent debian/ release.
-* You can find Debian packages from the "OfflineIMAP Debian Page":http://packages.debian.org/offlineimap
-* RPMs and packages for many other Linux and BSD distributions are also included with your distribution.
+You should first check if your distribution already package OfflineIMAP for you.
 
-h1. Contributing to OfflineIMAP
+Downloads releases as "tarball or zipball":https://github.com/OfflineIMAP/offlineimap/tags.
 
-You can always take the easy route: download the source and email diffs.  But it's better if you use Git.  Github has a lot of information on "their help site":http://help.github.com/ about doing that.
 
-h1. Development & Support Status
+h1. Documentation
 
-John Goerzen initially wrote OfflineIMAP, but due to time constraints, is no longer able to write much code for it directly.  Support is provided primarily by the community on the mailing list.  Most patches, changes, bugfixes, etc. are written by others and periodically merged into the main development branch by John.
+* "Annotated offlineimap.conf file":http://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf, with full documentation on the file and examples
+* "Minimal offlineimap.conf":http://github.com/OfflineIMAP/OfflineIMAP/blob/master/offlineimap.conf.minimal, which shows how simple it is to get started
+* [[Frequently Asked Questions]]
+* [[Known Issues]]
 
-h1. Mailing List and Community
-
-Please ask here with your questions.
-
-The OfflineIMAP "mailing list is available":http://lists.alioth.debian.org/mailman/listinfo/offlineimap-project for you.  Long-term archives are "available from GMane":http://dir.gmane.org/gmane.mail.imap.offlineimap.general.
 
 h1. SSL Certificate Validation
 
 OfflineIMAP doesn't validate remote SSL certificates.
 
 For more, see [[http://news.gmane.org/find-root.php?group=gmane.mail.imap.offlineimap.general&article=760]]
+
+
+h1. Contributing to this wiki
+
+h2. online
+
+If you have a Github account, you can login and edit online. Login is required
+for online edit.
+
+h2. with Git
+
+1. First, clone this wiki with the link the the right menu or fetch the lastest
+updates from the official wiki (git pull).
+2. "Fork the mirror":http://github.com/OfflineIMAP/offlineimap-wiki.
+3. Add a reference to your fork: git remote add myfork git@github.com:<username>/offlineimap-wiki.git
+4. Edit, edit, edit
+5. Commit your changes.
+6. Submit a pull requet.
