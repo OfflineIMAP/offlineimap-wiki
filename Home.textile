@@ -2,22 +2,6 @@
 "Github OfflineIMAP page":http://github.com/OfflineIMAP/offlineimap
 
 
-
-h1. Downloads: Source and Binaries
-
-You should first check if your distribution already package OfflineIMAP for you.
-
-Downloads releases as "tarball or zipball":https://github.com/OfflineIMAP/offlineimap/tags.
-
-
-h1. Documentation
-
-* "Annotated offlineimap.conf file":http://github.com/OfflineIMAP/offlineimap/blob/master/offlineimap.conf, with full documentation on the file and examples
-* "Minimal offlineimap.conf":http://github.com/OfflineIMAP/OfflineIMAP/blob/master/offlineimap.conf.minimal, which shows how simple it is to get started
-* [[Frequently Asked Questions]]
-* [[Known Issues]]
-
-
 h1. SSL Certificate Validation
 
 OfflineIMAP doesn't validate remote SSL certificates.
