@@ -42,13 +42,15 @@ Write your WIP directly in this file.
 * Namespace the factorized code.
 
   If a method require a local function, DON'T USE yet another method. Use a
-  local namespaced function.::
+  local namespaced function:
 
+    ```
     class BLah(object):
         def _internal_method(self, arg):
             def local_factorized(local_arg):
                 # local_factorized's code
             # _internal_method's code.
+    ```
 
   Python allows local namespaced functions for good reasons.
 
@@ -61,8 +63,10 @@ Write your WIP directly in this file.
   keep the well common NON-redefined stuff into the parent and define the
   required methods in the childs. We really don't want anything like:
 
+    ```
     def method(self):
         raise NotImplemented
+    ```
 
   While this is common practice in Python, think about that again: how a
   parent object should know all the expected methods/accessors of all the
