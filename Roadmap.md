@@ -10,7 +10,8 @@ Take last bug fixes that have a chance to get into it.
 
 * Freeze the code, only take bug fixes and trivial patches.
 * Goals:
-  * rename the UIs
+  * rename the UIs.
+  * Py3 compatibility.
   * deep refactoring to make code clearer, improvements and debugging
   easier.
 
