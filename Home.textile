@@ -2,13 +2,6 @@
 "Github OfflineIMAP page":http://github.com/OfflineIMAP/offlineimap
 
 
-h1. SSL Certificate Validation
-
-OfflineIMAP doesn't validate remote SSL certificates.
-
-For more, see [[http://news.gmane.org/find-root.php?group=gmane.mail.imap.offlineimap.general&article=760]]
-
-
 h1. Contributing to this wiki
 
 h2. online
